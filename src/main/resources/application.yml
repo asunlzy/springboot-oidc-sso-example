@@ -1,0 +1,15 @@
+server:
+    port: 8080
+spring:
+    security:
+        oauth2:
+            client:
+                registration:
+                    yidengtech-idaas:  # 自定义 provider id
+                        client-id: app_4f925d154cf04217bde9a2966a46ba55
+                        client-secret: 4586bca16cfe409e92db7c11fe356985
+                        scope:
+                            - openid
+                provider:
+                    yidengtech-idaas:  # 自定义 provider id
+                        issuer-uri: https://idaas-api.yidengtech.com/third/oidc/v1/app_4f925d154cf04217bde9a2966a46ba55
